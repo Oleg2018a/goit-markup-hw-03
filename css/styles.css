@@ -33,7 +33,7 @@ img{
   display: block;
 }
 .container {
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
   width: 1158px;
   margin: 0 auto;
   padding-left: 15px;
@@ -61,10 +61,20 @@ img{
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom: 1px solid #E7E9FC;
+ 
 }
 
+.header-container{
+  display: flex;
+  
+}
 
 .header-navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+ 
 }
 .logo {
   color: var(--focus-text-color);
@@ -75,6 +85,7 @@ img{
   letter-spacing: 0.03em;
   text-decoration: none;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 .logo-studio {
   color: var(--title-text-color);
@@ -84,6 +95,11 @@ img{
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+
+  display: flex;
+  gap: 40px;
+  
+  
 }
 
 .header-item {
@@ -91,6 +107,7 @@ img{
 
 .header-link {
   color: var(--title-text-color);
+
 }
 .header-link:hover,
 .header-link:focus {
@@ -101,8 +118,11 @@ img{
 }
 
 .address-list {
+  display: flex;
+  gap: 40px;
 }
 .address-item {
+  
 }
 .address-link {
   color: var(--primary-text-color);
@@ -119,6 +139,7 @@ img{
   background-color: var(--title-text-color);
   padding-top: 188px;
   padding-bottom: 188px;
+  text-align: center;
 }
 .hero-title {
   color: var(--primary-bg-color);
@@ -151,17 +172,26 @@ img{
 .advantages {
   padding-top: 120px;
   padding-bottom: 120px;
+ 
 }
 .advantages-title {
+ 
+}
+.advantages-container{
+ 
 }
 .advantages-list {
+  display: flex;
+  gap: 24px;
 }
 
 .advantages-item {
+  min-width: 264px;
 }
 .advantages-list-title {
 }
 .advantages-text {
+ 
 }
 /* ==============================examples=============== */
 .examples {
@@ -177,6 +207,8 @@ img{
   margin-bottom: 72px;
 }
 .examples-list {
+  display: flex;
+  gap: 24px;
 }
 .examples-item {
 }
@@ -198,13 +230,20 @@ img{
   margin-bottom: 72px;
 }
 .team-list {
+  display: flex;
+  gap: 24px;
+  
+
 }
 .team-item {
   background-color: var(--primary-bg-color);
+  width: calc((100% - 72px ) /4);
 }
 .team-list-title {
+  text-align: center;
 }
 .team-text {
+  text-align: center;
 }
 /* ======================portfolio=============== */
 .portfolio {
@@ -216,10 +255,14 @@ img{
 
 .portfolio-list {
   margin-bottom: 72px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
 }
 .portfolio-item {
 }
 .portfolio-button {
+
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -228,6 +271,10 @@ img{
   color: var(--focus-text-color);
   background-color: var(--button-bg-cololr);
   cursor: pointer;
+  padding: 12px 24px;
+
+  border-radius: 4px;
+  border: 1px solid #E7E9FC;
 }
 .portfolio-button:hover,
 .portfolio-button:focus {
@@ -235,6 +282,12 @@ img{
   background-color: var(--hover-focus-color);
 }
 .work-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+.work-item{
+
 }
 .work-text {
   color: var(--primary-text-color);
@@ -263,4 +316,5 @@ img{
 .footer-text {
   color: var(--footer-text-cololr);
   margin-top: 16px;
+  max-width: 264px;
 }
