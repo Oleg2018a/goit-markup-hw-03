@@ -31,6 +31,7 @@ p {
 }
 img{
   display: block;
+  max-width: 100%;
 }
 .container {
   /* outline: 2px solid tomato; */
@@ -237,10 +238,15 @@ img{
 }
 .team-item {
   background-color: var(--primary-bg-color);
-  width: calc((100% - 72px ) /4);
+  width: calc(( 100% - 72px ) /4);
+  padding-bottom: 32px;
+}
+.team-img{
+  margin-bottom: 32px;
 }
 .team-list-title {
   text-align: center;
+  margin-bottom: 8px;
 }
 .team-text {
   text-align: center;
@@ -260,6 +266,7 @@ img{
   gap: 24px;
 }
 .portfolio-item {
+
 }
 .portfolio-button {
 
@@ -287,6 +294,7 @@ img{
   gap: 48px 24px;
 }
 .work-item{
+  width: calc(( 100% - 48px ) /3);
 
 }
 .work-text {
